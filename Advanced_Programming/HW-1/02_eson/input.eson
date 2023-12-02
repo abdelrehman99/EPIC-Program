@@ -1,0 +1,32 @@
+{
+    key = 42,
+    value = true,
+    date = 2023-11-02,
+    date2 = 1901-01-31,
+    time = 12:02:35,
+    time2 = 00:01:02,
+    otherTime = 12:02:35.12135,
+    datetime = 2023-11-02T12:02:35.12135,
+    otherDatetime = 2023-11-02T12:02:35,
+    ok = true, # this is a comment
+    notOk = false,
+    someStr = "# this is not a comment",
+    arr1 = [null, true, false, null, 42, 042, 0x42,],
+    arr1-1 = [042, 0003, +0, +042, -042, +0003, -0003, -0x42, +0x42, 0010],
+    arr2 = [-1., -.5, -.5e2, +.5e+42, 1e3, 1e-3, 1e+3, 0010, 0010e2, 0010., .0010],
+    dict = {"1"=first, "2"=second,},
+    dict2 = {"3"=false, four='\u042e', key5="hello\n\tworld\\42\"test\'", "6"='\''},
+    emptyDict = {},
+    emptyList = [],
+    nested = {
+        "1"={
+            "2"={
+                "3"={
+                    "4"={inside=hello},
+                }
+            },
+        }
+    },
+    "weird\nkey\"" = [{"\"" = 1}, {"\"" = 2,}, {"\u042e" = '\u042e'}],
+    test   =   passed
+}
