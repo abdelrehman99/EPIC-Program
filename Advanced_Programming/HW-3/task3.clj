@@ -20,4 +20,8 @@
                 (println path)))))
 
 ; Just start recursive scan for directory test
-(scan "test")
+(def futures (for [_ (range 5)]
+               (future (scan "test"))))
+
+(doseq [f (doall futures)] @f)
+(shutdown-agents)
